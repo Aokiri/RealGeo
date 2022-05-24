@@ -5,7 +5,7 @@ Una simple página para capturar la IP y la locación real de la víctima.
 
 ### Instrucciones:
 
-1. Coloca los archivos en tu webserver con "main" como la página a mostrar.
+1. Coloca los archivos en tu webserver con "index" como la página a mostrar.
 2. Cuando la víctima cargue la página, se generará un archivo "datos.txt" donde estén alojados los archivos.
 3. Tras abrir "datos.txt", ve a Google Maps o utiliza algún GPS Translator para localizar el objetivo.
 

@@ -1,10 +1,13 @@
 # RealGeo
-A simple webpage to hook real location and IP from the victim.
+Una simple página para capturar la IP y la locación real de la víctima.
 
 <img src="https://user-images.githubusercontent.com/62292670/169987744-86a2d8e6-d6c8-43d1-b896-e78e01c36be6.png" width="220"/>
 
-### Instructions:
+### Instrucciones:
 
-1. Put the files in your webserver with "main" as your mainpage.
-2. When the victim load the page, you will get a "data.txt" file.
-3. Go to Google Maps or GPS Translate and put the lat&long to finish the job.
+1. Coloca los archivos en tu webserver con "main" como la página a mostrar.
+2. Cuando la víctima cargue la página, se generará un archivo "datos.txt" donde estén alojados los archivos.
+3. Tras abrir "datos.txt", ve a Google Maps o utiliza algún GPS Translator para localizar el objetivo.
+
+
+> Nota: Todavía falta mejorar la página para que el pop-up de locación se acepte automáticmente al abrirse la página.

